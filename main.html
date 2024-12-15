@@ -2,14 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>COVID-19 Stats</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
+        }
+        tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+        tr:hover td {
+            background-color: #e2e2e2;
+        }
+        .header-row {
+            background-color: #333;
+            color: white;
+            font-size: 1.2em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
 
-        
+<table>
+    <thead>
+        <tr class="header-row">
+            <th>City</th>
+            <th>Total Cases</th>
+            <th>Total Recovered</th>
+            <th>Total Deaths</th>
+            <th>Active Cases</th>
+            <th>Recovery Rate (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>New York</td>
+            <td>1,200,000</td>
+            <td>1,100,000</td>
+            <td class="highlight">50,000</td>
+            <td>50,000</td>
+            <td>91.67</td>
+        </tr>
+        <tr>
+            <td>Los Angeles</td>
+            <td>800,000</td>
+            <td>750,000</td>
+            <td>30,000</td>
+            <td>20,000</td>
+            <td>93.75</td>
+        </tr>
+        <tr>
+            <td>Chicago</td>
+            <td>600,000</td>
+            <td>550,000</td>
+            <td>25,000</td>
+            <td>25,000</td>
+            <td>91.67</td>
+        </tr>
+        <tr>
+            <td>Houston</td>
+            <td>400,000</td>
+            <td>375,000</td>
+            <td>10,000</td>
+            <td>15,000</td>
+            <td>93.75</td>
+        </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
